@@ -97,6 +97,77 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{
+  font-family: 'Raleway', sans-serif;
+}
+   body{
+    background-color: #fbfaf8;
+    font-family: 'Raleway', sans-serif;
+
+   }
+
+
+
+   ul{
+    list-style-type: none;
+    margin-top: 48px;
+   }
+
+   li{
+    list-style-type: none;
+    font-size: 24px;
+    margin-bottom: 24px; 
+   }
+
+   a{
+
+   }
+
+   #main img{
+    width: 100%;
+    max-width: 100%;
+   }
+
+   .logo{
+    margin-top: 64px;
+    margin-left: 12px; 
+   }
+
+
+   .artwork{
+    margin-top: 48px;
+   }
+
+   form{
+    margin-top: 24px;
+   }
+
+
+   #icons{
+    display: inline-block;
+   }
+
+   #icons li{
+    display: inline-block;
+   }
+
+   i{
+    color: black;
+    margin: 12px;
+    padding: 12px;
+   }
+
+   .copyright{
+    margin-top: 80px;
+    margin-left: 85%; 
+   }
+
+   button{
+    background-color: black !important;
+    border-radius: 0px;
+    width: 220px;
+    margin-left: 80%; 
+   }
 
 /* ==========================================================================
    Helper classes
