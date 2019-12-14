@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+/*! /*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
@@ -16,7 +16,31 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+#main{
+  flex-direction: row;
+  display: flex; 
+}
 
+#grid {
+
+  width: 100%
+  max-width:100%;
+  margin-bottom: 40px;
+}
+
+
+.galeria{
+  width: 70vw;
+  margin-left: 30vw;
+  height: 50vh;
+  
+}
+
+.galeria img{
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -124,13 +148,15 @@ body{
    }
 
    #main img{
-    width: 100%;
+
     max-width: 100%;
    }
 
    .logo{
     margin-top: 64px;
-    margin-left: 12px; 
+    margin-left: 12px;
+    width: 40%;
+    max-width: 100%; 
    }
 
 
@@ -159,7 +185,7 @@ body{
 
    .copyright{
     margin-top: 80px;
-    margin-left: 85%; 
+    margin-right: 40px; 
    }
 
    button{
@@ -168,7 +194,57 @@ body{
     width: 220px;
     margin-left: 80%; 
    }
+   
+   #imgabout{
+    width: 100%;
+    max-width: 100%;
+   }
 
+   .slider {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  
+  animation: cambio 10s infinite alternate linear;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+}
+
+@keyframes cambio {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+  
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+  
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+  
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
+
+a{
+  color: #000;
+}
+
+a:hover{
+  color: #000;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -251,7 +327,33 @@ body{
 .clearfix:after {
   clear: both;
 }
+.masonry-grid img{
+  width: 100%;
+  max-width: 100%;
+  margin:2px;
+  padding: 22px;
+  opacity: 95%;
 
+}
+
+.masonry-grid p{
+ font-family: 'Raleway', sans-serif;
+margin-left: 250px;
+
+}
+
+
+.masonry-grid{
+  margin-bottom: 100px;
+}
+
+.masonry-column {
+  padding: 0;
+}
+
+.masonry-grid > div .thumbnail {
+  margin: 0;
+}
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
